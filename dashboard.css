@@ -1,89 +1,201 @@
-body,
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.main{
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container{
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 4fr;
-    height: 100%;
+    grid-template-columns: 250px 5fr 320px;
+    grid-template-rows: 2fr 5fr;
 }
 
 .sidebar{
-    background-color: #38bdf8;
+    background-color: #15b1a4;
+    color: #fff;
+    font-size: 18px;
     grid-row: 1 / 3;
-    text-align: center;
-    font-size: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 60px 250px 2fr;
+    justify-content: center;
+    gap: 15px;
 }
 
-ul{
-    list-style-type: none;
-    padding: 10px;
+.sidebar ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
 
+.sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .header{
-    margin-top: 10px;
+    background-color: #ffffff;
+    grid-column: 2 / 4;
+    box-shadow: 10px 10px 10px #d1d1d1;
+    padding: 0px 18px;
     display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: white;
-    font-size: 20px;
+    height: 180px;
 }
 
-.searchBar{
-    width: 300px;
-    height: 30px;
-    border-radius: 50px 50px 50px 50px;
-    justify-self: center;
-    align-self: center;
+.topHeader  > .searchImg, .notificationImg{
+    width: 20px;
 }
 
-.name{
-    justify-self: flex-end;
+.profileImg{
+    width: 40px;
 }
 
-.userName{
-    justify-self: center;
-}
-
-.buttons{
-    display: grid;
-    grid-template-columns: repeat(3, 80px);
-    justify-content: flex-end;
-}
-
-button{
+.profileImg2{
     width: 70px;
-    height: 28px;
-    border-radius: 25px 25px 25px 25px;  
-    align-self: center; 
+}
+
+.topHeader{
+    display: grid;
+    grid-template-columns: 30px 3fr 100px 80px 200px;
+    align-items: center;
+    gap: 10px;
+}
+
+.topHeader .notificationImg{
     justify-self: flex-end;
 }
 
-.content{
+.topHeader .profileImg{
+    justify-self: center;
+}
+
+.topHeader input{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 15px;
+}
+
+.bottomHeader{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #d1d5db
+    grid-template-columns: 80px 5fr 2fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bottomHeader .buttons{
+    justify-self: center;
+}
+
+.userNameInfo .username2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bottomHeader .buttons{
+    display: grid;
+    gap: 15px;
+    grid-auto-flow: column;
+}
+
+.bottomHeader .buttons > .btn{
+    border: 0;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #15b1a4;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main{
+    padding: 20px;
 }
 
 .projects{
-    grid-column: 1;
-    grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-    justify-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.projects .project{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #fcd34d;
+    box-shadow: 2px 2px 12px #0000000c;
+    display: grid;
+    gap: 10px;
+}
+
+.main .project .icons{
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main .project:hover{
+    border-left: 5px solid #15b1a4;
+    box-shadow: 2px 2px 10px #00000028;
+}
+
+.trending img {
+    width: 50px;
+}
+
+.aside {
+    padding: 20px;
+}
+
+.announcements{
+    background-color: #fff;
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.announcements p{
+    font-size: 14px;
+}
+
+.trending{
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.trendingInfo{
+    grid-column: 1 / 3;
+    display: grid;
+}
+
+.tegan, .morgan, .kendall, .patrick{
+    grid-column: 2 / 3;
+    justify-content: flex-start;
+    justify-self: flex-start;
+}
+
+.morgan{
+    justify-content: start;
+}
 
 
 

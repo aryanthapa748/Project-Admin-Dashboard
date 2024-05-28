@@ -1,81 +1,179 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project: Admin Dashboard</title>
-        <link rel="stylesheet" href="dashboard.css">
-    </head>
-    <body>
-        <div class="main">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+<body>
+    <div class="container">
+
         <div class="sidebar">
-            <h2>Dashboard</h2>
-            <div class="nav-links">
+            <h2><span class="material-symbols-outlined">dashboard</span>Dashboard</h2>
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li><span class="material-symbols-outlined">home</span>Home</li>
+                <li><span class="material-symbols-outlined">badge</span>Profile</li>
+                <li><span class="material-symbols-outlined">forum</span>Messages</li>
+                <li><span class="material-symbols-outlined">history</span>History</li>
+                <li><span class="material-symbols-outlined">task</span>Task</li>
+                <li><span class="material-symbols-outlined">groups</span>Communities</li>
             </ul>
-            </div>
-            <div class="nav-helps">
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
-            </div>
+            <ul>
+                <li><span class="material-symbols-outlined">settings</span>Settings</li>
+                <li><span class="material-symbols-outlined">live_help</span>Support</li>
+                <li><span class="material-symbols-outlined">verified_user</span>Privacy</li>
+            </ul>
         </div>
 
         <div class="header">
-            <input type="text" class="searchBar">
-            <p class="name">Aryan Thapa</p>
-            <p class="userName">Hi there,<br> Aryan Thapa(@aryanThapa)</p>
-            <div class="buttons">
-                <button type="button">New</button>
-                <button type="button">Upload</button>
-                <button type="button">Share</button>
+            <div class="topHeader">
+                <img src="images/search.svg" class="searchImg">
+                <input type="text" class="searchBar" placeholder="Search your projects.">
+                <img src="images/notification.svg" class="notificationImg">
+                <img src="images/student.png" class="profileImg">
+                <p class="username">Aryan Thapa</p>
+            </div>
+            <div class="bottomHeader">
+                <img src="images/student.png" class="profileImg2">
+                <div class="userNameInfo">
+                    <p>Hi there,</p>
+                    <p class="username2">Aryan Thapa (@aryanThapa)</p>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn">New</button>
+                    <button type="button" class="btn">Upload</button>
+                    <button type="button" class="btn">Share</button>
+                </div>
             </div>
         </div>
 
-        <div class="content">
-            <p>Your Projects</p>
+        <div class="main">
+            <h2>Your Projects</h2>
             <div class="projects">
-            <div class="projects1">
-                <h3>Project: JavaScript Calculator</h3>
-                <p>This project was created using HTML, CSS and JavaScript. I used basic concepts of JavaScript fundamentals, functions and loops to achieve this iPhone like calculator.</p>
+                <div class="project 1">
+                    <div class="text">
+                        <h4>Project: JavaScript Calculator</h4>
+                        <p>This project was created using HTML, CSS and JavaScript. I used basic concepts of JavaScript fundamentals, functions and loops to achieve this iPhone like calculator.</p>
+                    </div>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                </div>
+                <div class="project 2">
+                    <div class="text">
+                        <h4>Project: Role Playing Game</h4>
+                        <p>I've crafted this practice project to immerse myself in fundamental programming concepts using JavaScript while building my very own Role Playing Game. I've honed my skills in manipulating arrays, strings, and objects, functions, navigating loops, and crafting effective if/else statements.</p>
+                    </div>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                </div>
+                <div class="project 3">
+                    <div class="text">
+                        <h4>Project: Etch-a-Sketch</h4>
+                        <p>This project is a browser version of something between a sketchpad and an Etch-a-Sketch. This project helped me leverage my DOM manipulation skills using JavaScript.</p>
+                    </div>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                </div>
+                <div class="project 4">
+                    <div class="text">
+                        <h4>Project: Rock Paper Scissors</h4>
+                        <p>This project contains a simple Rock Paper Scissors game implemented in JavaScript. The game allows a player to play against the computer in a series of rounds and displays the winner at the end.</p>
+                    </div>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                </div>
+                <div class="project 5">
+                    <div class="text">
+                        <h4>Project: Product Landing Page</h4>
+                        <p>The project was inspired by the layout of Apple's official iPhone website, though it's far from perfect primarily to practice using basic HTML and CSS, focusing mainly on different flexbox properties.</p>
+                    </div>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                </div>
+                <div class="project 6">
+                    <div class="text">
+                        <h4>Project: Quiz Page</h4>
+                        <p>In this project, I created a quiz webpage with a focus on accessibility tools like keyboard shortcuts, ARIA attributes, and design best practices. With this project, I aim to promote inclusivity and ensure that all users, including those with disabilities, can easily navigate and interact with the content.</p>
+                    </div>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                </div>
             </div>
-            <div class="project2">
-                <h3>Project: Role Playing Game</h3>
-                <p>I've crafted this practice project to immerse myself in fundamental programming concepts using JavaScript while building my very own Role Playing Game. I've honed my skills in manipulating arrays, strings, and objects, functions, navigating loops, and crafting effective if/else statements.</p>
-            </div>
-            <div class="project3">
-                <h3>Project: Etch-a-Sketch</h3>
-                <p>This project is a browser version of something between a sketchpad and an Etch-a-Sketch. This project helped me leverage my DOM manipulation skills using JavaScript.</p>
-            </div>
-            <div class="project4">
-                <h3>Project: Rock Paper Scissors</h3>
-                <p>This project contains a simple Rock Paper Scissors game implemented in JavaScript. The game allows a player to play against the computer in a series of rounds and displays the winner at the end.</p>
-            </div>
-            <div class="project5">
-                <h3>Project: Product Landing Page</h3>
-                <p>The project was inspired by the layout of Apple's official iPhone website, though it's far from perfect primarily to practice using basic HTML and CSS, focusing mainly on different flexbox properties.</p>
-            </div>
-            <div class="project6">
-                <h3>Project: Quiz Page</h3>
-                <p>In this project, I created a quiz webpage with a focus on accessibility tools like keyboard shortcuts, ARIA attributes, and design best practices. With this project, I aim to promote inclusivity and ensure that all users, including those with disabilities, can easily navigate and interact with the content.</p>
-            </div>
-            </div>
-            <p class="announcements">Announcements</p>
-            <p class="trending">Trending</p>
-        </div>
         </div>
 
-    </body>
+        <div class="aside">
+            <h2>Announcements</h2>
+            <div class="announcements">
+                <div class="announcementInfo">
+                    <h4>Site Maintenance</h4>
+                    <p>We have a scheduled a site maintenance on coming December, 2024. The site will remain unavailable during the maintenance period. Sorry for the inconvenience.</p>
+                </div>
+                <div class="announcementInfo">
+                    <h4>Community Share Day</h4>
+                    <p>We have a special community share day happening on July 13, 2024 via Zoom. We will provide the invite link on Dashboard - Messages shortly.</p>
+                </div>
+                <div class="announcementInfo">
+                    <h4>Updated Privacy Policy</h4>
+                    <p>Please be advised that we have recently updated our privacy policy for this site. Please review it which is available on Dashboard - Privacy section. </p>
+                </div>
+            </div>
+
+            <h2>Trending</h2>
+            <div class="trending">
+                <div class="trendingInfo">
+                    <img src="images/tegan.png">
+                    <div class="tegan">
+                    <h4>@tegan</h4>
+                    <p>World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trendingInfo">
+                    <img src="images/morgan.png">
+                    <div class="morgan">
+                    <h4>@morgan</h4>
+                    <p>Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="trendingInfo">
+                    <img src="images/kendall.png">
+                    <div class="kendall">
+                    <h4>@kendall</h4>
+                    <p>Life Changing App</p>
+                    </div>
+                </div>
+                <div class="trendingInfo">
+                    <img src="images/patrick.png">
+                    <div class="patrick">
+                    <h4>@patrick</h4>
+                    <p>God is good</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
-
-
-
-
